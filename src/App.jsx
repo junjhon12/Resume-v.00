@@ -31,9 +31,8 @@ function App() {
             Quoc Bao Dinh Le
           </h1>
           <p style={{ fontSize: '1.2rem', maxWidth: '600px' }}>
-            Fullstack Web Developer focusing on the <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>Backend</span><br/>
-            in <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>Georgia</span>. <br/>
-            Currently focused on <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>React</span>.
+            Fullstack Web Developer focusing on the <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>Backend</span> in <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>Georgia</span>. <br/>
+            Currently focused on <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>React, Typescript, and Tailwind</span>.
           </p>  
           <div className="hero-actions">
             <button className='signal-btn' onClick={() => scrollToSection('contact')}>
