@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx';
 import RepoGallery from './components/RepoGallery.jsx';
 import Contact from './components/Contact.jsx';
 import gif from './assets/swimming-koi.gif';
+import resume from './assets/resume.pdf'
 import './App.css'
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
             <a href="#contact">
               <button className='signal-btn'>SEND_SIGNAL</button>
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <button className="download-btn">
                 DOWNLOAD_CV
               </button>
