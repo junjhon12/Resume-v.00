@@ -1,0 +1,51 @@
+.navbar {
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  
+  /* Sticky Magic */
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Ensures it floats ABOVE everything else */
+  
+  /* Indie Look */
+  background-color: #fffbf0; /* Match the body background */
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: -1px; /* Tighter letters look more "brutalist" */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px; /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+
+/* COOL HOVER EFFECT: The Underline Animation */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff6b6b; /* Retro Red */
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Expands the red line when you hover */
+}

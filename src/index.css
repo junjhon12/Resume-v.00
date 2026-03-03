@@ -1,0 +1,28 @@
+/* src/index.css */
+
+/* 1. Reset: Remove default spacing so we have full control */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Global Typography & Color */
+body {
+  /* The "Typewriter" look */
+  font-family: 'Courier New', Courier, monospace;
+  
+  /* The "Old Paper" background */
+  background-color: #fffbf0; 
+  
+  /* Soft Black text (easier to read than pure black) */
+  color: #212121;
+}
+
+/* 3. Global Layout Helper */
+/* This ensures your content doesn't touch the very edge of the screen */
+.app {
+  max-width: 1200px; /* Don't stretch too wide on huge monitors */
+  margin: 0 auto;    /* Center the app in the middle */
+  padding: 20px;
+}

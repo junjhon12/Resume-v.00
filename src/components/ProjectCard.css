@@ -1,0 +1,54 @@
+/* The Card Container */
+.card {
+  width: 300px;           /* Fixed width like a trading card */
+  background: white;
+  border: 2px solid black; /* Thick dark border */
+  
+  /* THE INDIE TRICK: A shadow with 0px blur looks like a block */
+  box-shadow: 5px 5px 0px 0px black; 
+  
+  padding: 15px;
+  margin: 10px;
+  transition: all 0.1s; /* Makes the movement snappy */
+}
+
+/* Hover Effect: When mouse goes over it */
+.card:hover {
+  transform: translate(-3px, -3px); /* Move UP and LEFT */
+  box-shadow: 8px 8px 0px 0px black; /* Make shadow BIGGER */
+}
+
+/* The Image inside the card */
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Prevents image stretching */
+  border: 2px solid black; /* Border around the image too */
+  margin-bottom: 15px;
+  filter: grayscale(100%); /* Cool effect: Black & White image */
+}
+
+/* When hovering the CARD, turn the IMAGE colored */
+.card:hover .card-image {
+  filter: grayscale(0%);
+}
+
+/* The Title */
+.card h3 {
+  font-family: 'Courier New', monospace; /* Typewriter font */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black; /* Underline */
+}
+
+/* The Button */
+.card button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  background: #ff6b6b; /* Retro Red */
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
