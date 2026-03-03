@@ -1,16 +1,26 @@
-# React + Vite
+# Quoc Bao Dinh Le - Interactive Resume (v.00)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+View the live deployment here: [Live Demo](https://junjhon12.github.io/Resume-v.00/)
 
-Currently, two official plugins are available:
+This is the current Portfolio site version for now.
+I plan on updating it int he near future using React Vite, TypeScript, and Tailwind.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+* **Programmatic Navigation:** Implements a smooth-scroll `scrollIntoView` API for seamless single-page navigation without URL hash fragments.
+* **Component-Based Architecture:** Modular React components for the Navbar, Hero, Projects, and Contact sections.
+* **Responsive Design:** Custom CSS Grid and Flexbox layouts that adapt seamlessly from desktop to mobile screens.
 
-## React Compiler
+* ## Tech Stack
+* **Frontend Framework:** React
+* **Build Tool:** Vite
+* **Styling:** Vanilla CSS (CSS Grid, Flexbox)
+* **Hosting:** GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ## Running Locally
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   `git clone https://github.com/junjhon12/Resume-v.00.git`
+2. Install dependencies:
+   `npm install`
+3. Start the development server:
+   `npm run dev`
