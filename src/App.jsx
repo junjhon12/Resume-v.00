@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import RepoGallery from './components/RepoGallery.jsx';
 import Contact from './components/Contact.jsx';
+import gif from './assets/swimming-koi.gif';
 import './App.css'
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
 
         <div className="hero-image-container">
            {/* Make sure to place your GIF in the `public` folder */}
-           <img src="/swimming-koi.gif" alt="Animated illustration" />
+           <img src={gif} alt="Animated illustration" />
         </div>
 
       </header>
