@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({scrollToSection}) => {
   return (
     <nav className="navbar">
       {/* The Logo (Just text in this style) */}
@@ -9,9 +9,9 @@ const Navbar = () => {
       
       {/* The Links */}
       <ul className="nav-links">
-        <li><a href="#hero">HOME</a></li>
-        <li><a href="#repo">REPO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><span onClick={() => scrollToSection('hero')}>HOME</span></li>
+        <li><span onClick={() => scrollToSection('repo')}>REPO</span></li>
+        <li><span onClick={() => scrollToSection('contact')}>CONTACT</span></li>
       </ul>
     </nav>
   );

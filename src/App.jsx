@@ -8,12 +8,18 @@ import resume from './assets/resume.pdf'
 import './App.css'
 
 function App() {
+  const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   return (
     <div className="app">
       
       {/* 1. NAV AREA */}
       <div style={{ gridArea: 'nav' }}>
-        <Navbar/>
+        <Navbar scrollToSection={scrollToSection} />
       </div>
 
       {/* 2. HERO AREA */}
@@ -25,13 +31,14 @@ function App() {
             Quoc Bao Dinh Le
           </h1>
           <p style={{ fontSize: '1.2rem', maxWidth: '600px' }}>
-            Fullstack Web Developer. <br/>
+            Fullstack Web Developer focusing on the <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>Backend</span><br/>
+            in <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>Georgia</span>. <br/>
             Currently focused on <span style={{ background: '#ff6b6b', color: 'white', padding:'0 5px'}}>React</span>.
           </p>  
           <div className="hero-actions">
-            <a href="#contact">
-              <button className='signal-btn'>SEND_SIGNAL</button>
-            </a>
+            <button className='signal-btn' onClick={() => scrollToSection('contact')}>
+              SEND_SIGNAL
+            </button>
             <a href={resume} target="_blank" rel="noopener noreferrer">
               <button className="download-btn">
                 DOWNLOAD_CV
@@ -57,10 +64,8 @@ function App() {
       </main>
 
       {/* 4. CONTACT AREA */}
-      <div style={{ 
-        gridArea: 'contact',
-      }}>
-        <Contact/>
+      <div id="contact" style={{ gridArea: 'contact' }}>
+        <Contact />
       </div>
 
       {/* 5. FOOTER AREA */}
@@ -72,4 +77,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

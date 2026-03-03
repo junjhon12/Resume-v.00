@@ -27,15 +27,16 @@
   gap: 30px; /* Space between links */
 }
 
-.nav-links a {
+.nav-links span {
   text-decoration: none;
   color: black;
   font-weight: bold;
   position: relative;
+  cursor: pointer;
 }
 
 /* COOL HOVER EFFECT: The Underline Animation */
-.nav-links a::after {
+.nav-links span::after {
   content: '';
   position: absolute;
   width: 0;
@@ -46,6 +47,6 @@
   transition: width 0.3s;
 }
 
-.nav-links a:hover::after {
+.nav-links span:hover::after {
   width: 100%; /* Expands the red line when you hover */
 }
