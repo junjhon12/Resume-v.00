@@ -52,7 +52,7 @@ const RepoGallery = () => {
             : "No description provided."} 
           
           // GitHub doesn't give images easily, so we use a placeholder or a random image service
-          image={`https://placehold.co/600x400/ff6b6b/white?text=${repo.language || 'Code'}`}
+          image={`https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`}
           
           link={repo.html_url}
           download={repo.html_url ? `${repo.html_url}/archive/HEAD.zip` : "#"}
