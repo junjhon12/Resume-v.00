@@ -63,7 +63,7 @@ function App() {
       </main>
 
       {/* 4. CONTACT AREA */}
-      <div id="contact" style={{ gridArea: 'contact' }}>
+      <div style={{ gridArea: 'contact' }}>
         <Contact />
       </div>
 

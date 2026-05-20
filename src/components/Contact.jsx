@@ -96,7 +96,12 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button type="submit">TRANSMIT_DATA</button>
+        <button 
+          type="submit" 
+          disabled={result === "Sending..."}
+        >
+          {result === "Sending..." ? "TRANSMITTING..." : "TRANSMIT_DATA"}
+        </button>
         
         {/* Show the success/error message if it exists */}
         {result && <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{result}</p>}

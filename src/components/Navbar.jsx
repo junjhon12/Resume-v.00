@@ -9,9 +9,9 @@ const Navbar = ({scrollToSection}) => {
       
       {/* The Links */}
       <ul className="nav-links">
-        <li><span onClick={() => scrollToSection('hero')}>HOME</span></li>
-        <li><span onClick={() => scrollToSection('repo')}>REPO</span></li>
-        <li><span onClick={() => scrollToSection('contact')}>CONTACT</span></li>
+        <li><button onClick={() => scrollToSection('hero')} className="nav-btn">HOME</button></li>
+        <li><button onClick={() => scrollToSection('repo')} className="nav-btn">REPO</button></li>
+        <li><button onClick={() => scrollToSection('contact')} className="nav-btn">CONTACT</button></li>
       </ul>
     </nav>
   );
